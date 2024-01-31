@@ -3,13 +3,13 @@ Attendance marking by *** students through a QR code
 
 # Índice
 
-1. [Contexto](#contexto-🤷🏻‍♂️)
-2. [Análisis / Algoritmia](#análisis--algoritmia-📈)
-3. [Base de Datos](#base-de-datos-💻)
-4. [Diseño](#diseño-✏️)
+1. [Contexto 🌐](#contexto)
+2. [Análisis / Algoritmia ⚙️](#análisis--algoritmia)
+3. [Base de Datos 🛢️](#base-de-datos)
+4. [Diseño 🎨](#diseño)
 
+## Contexto 🌐
 
-## Contexto 🤷🏻‍♂️
 <details>
   <summary>Click para ver detalles</summary>
   "***" es una institución educativa en la cual se presta un servicio de formación a los
