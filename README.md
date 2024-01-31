@@ -8,7 +8,7 @@ Attendance marking by *** students through a QR code
 3. [Base de Datos 🛢️](#base-de-datos)
 4. [Diseño 🎨](#diseño)
 
-## Contexto 🌐
+## Contexto
 
 <details>
   <summary>Click para ver detalles</summary>
@@ -38,7 +38,7 @@ Attendance marking by *** students through a QR code
   decisiones rápidamente. 📚📷🤳
 </details>
 
-## Análisis / Algoritmia 📈
+## Análisis / Algoritmia
 
 1. ¿Qué información necesitaría adicional para la marcación de asistencia?
  - Lorem
@@ -50,7 +50,7 @@ Attendance marking by *** students through a QR code
  - Lorem
 
 
-## Base de Datos 💻
+## Base de datos
 
 4. ¿En qué motor de base de datos implementaría su modelo? ¿Por qué?. Defina sus criterios y opciones
 - Lorem
@@ -66,6 +66,6 @@ b. Reporte de estudiantes con mayor número de tardanzas
 c. Reporte de docentes con mayor inasistencias  
 👉 Lorem  
 
-## Diseño ✏️
+## Diseño
 7. Si tuviera que definir la interfaz de un estudiante donde pueda visualizar sus clases y asistencias que elementos incluiría.  
 👉 Lorem
