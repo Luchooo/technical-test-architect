@@ -123,8 +123,11 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
   <summary>5. Defina un modelo de datos que cumpla con los requerimientos antes mencionados.</summary>  
 <br>
  <p>👉 Puedes ver el modelo dando click <a href="https://github.com/Luchooo/technical-test-architect/blob/main/model_db.sql">aquí</a>.</p>
+  <p>Data output <b>users</b></p>
+      <img src="https://github.com/Luchooo/technical-test-architect/assets/6707442/f278a20b-32b7-4634-b4e3-81f2f83340cd" alt="Data output users">
+  <p>Data output <b>courses by teacher</b></p>
+      <img src="https://github.com/Luchooo/technical-test-architect/assets/6707442/93fdee60-2ec6-4644-aa3a-ae95d3fb3e64" alt="Data output users">
 </details> 
-
 <br>
 <details>
   <summary>6. Realice las siguientes consultas, teniendo en cuenta el modelo previo.</summary>  
@@ -148,7 +151,9 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
           c.qr = 'codigo-qr-math'
       ORDER BY
           abc.dateTimeMs;
-      </code>    
+      </code>
+      <p>Data output </p>
+      <img src="https://github.com/Luchooo/technical-test-architect/assets/6707442/19fc6b74-0cb1-4ead-b6b9-3a6467caab3a" alt="Data output query 1">
    </li>
   </ul>
 </li>
@@ -172,7 +177,9 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
           u.id, u.name, u.email
       ORDER BY
           tardiness_count DESC;
-      </code>    
+      </code>
+      <p>Data output </p>
+       <img src="https://github.com/Luchooo/technical-test-architect/assets/6707442/1612be1f-16a2-4d54-b9fb-059f6e2ee730" alt="Data output query 2">
    </li>
   </ul>
 </li>
@@ -219,6 +226,8 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
               LIMIT 1
           );
       </code>
+      <p>Data output </p>
+       <img src="https://github.com/Luchooo/technical-test-architect/assets/6707442/460ff299-a3eb-40e8-bf9c-b133c41f07cc" alt="Data output query 3">
    </li>
   </ul>
 </li>
