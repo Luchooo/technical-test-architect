@@ -218,8 +218,7 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
                   COUNT(*) DESC
               LIMIT 1
           );
-
-      </code>    
+      </code>
    </li>
   </ul>
 </li>
@@ -232,7 +231,8 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
 <details>
   <summary>7. Si tuviera que definir la interfaz de un estudiante donde pueda visualizar sus clases y asistencias que elementos incluiría.</summary>
   <br>
-  <p>👉 Lorem
+  <p>👉 No reinventaría la rueda en cuanto al diseño del mockup. Podría ser algo muy similar a plataformas ya probadas y utilizadas por usuarios, como Google Classroom. Añadiría las funcionalidades adicionales que necesitamos, como la opción de registrar la asistencia a la clase mediante códigos QR, dentro de cada clase. Algo a tener en cuenta es nuestro usuarios, y es que estos pueden ser online o presencial entonces nuestro diseño ya sea por medio de un App, un PWA debera ser totalmente responsivo y accesible para cualquier dispositivo.
   </p>
+  <img src="https://1.bp.blogspot.com/-IAa-J5WSlNQ/XWHtaJ1Ve6I/AAAAAAABE5k/eHhEL3cxrsYICWZAwWj8vt7TNk7jlQ5YgCLcBGAs/s1600/2019%2BBlog%2BImages%2B%25281%2529.png" alt="Google ClassRoom">
 </details> 
 
