@@ -123,6 +123,9 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
   <summary>5. Defina un modelo de datos que cumpla con los requerimientos antes mencionados.</summary>  
 <br>
  <p>👉 Puedes ver el modelo dando click <a href="https://github.com/Luchooo/technical-test-architect/blob/main/model_db.sql">aquí</a>. Para un ambiente producción no crearia el modelo de esta manera con un script de SQL utilizaria herramientas que facilitan esto ya testeadas como los ORM de Primsa o Sequelize.</p>
+    <p>Entity Relationship Diagram</p>
+      <img src="https://github.com/Luchooo/technical-test-architect/assets/6707442/21c90982-03e9-427b-bd34-bbfd8b721d77" alt="Entity Relationship Diagram">
+
   <p>Data output <b>users</b></p>
       <img src="https://github.com/Luchooo/technical-test-architect/assets/6707442/f278a20b-32b7-4634-b4e3-81f2f83340cd" alt="Data output users">
   <p>Data output <b>courses by teacher</b></p>
