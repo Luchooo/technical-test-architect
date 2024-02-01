@@ -49,11 +49,13 @@ Attendance marking by *** students through a QR code
 
 2. Determine cuales son los actores que intervienen en el proceso 🧍
  - Los actores que identifico que se encuentran en el proceso son los estudiantes, profesores, SIS (Sistema de información estudiantil), la plataforma educativa y los código QR de la clase. Los represente en el siguiente diagrama de uso:
+   
+![Actores involucrados](https://github.com/Luchooo/technical-test-architect/assets/6707442/880636dd-174f-4fad-9186-728879c7c778)
 
- [Imagen]
 
-3.  Defina un algoritmo que implemente la marcación de asistencia antes mencionada (Diagrama de flujo)
- - Lorem
+3.  Defina un algoritmo que implemente la marcación de asistencia antes mencionada (Diagrama de flujo 🖼️)  
+
+![Ejemplo de diagrama de flujo de algoritmo](https://github.com/Luchooo/technical-test-architect/assets/6707442/be741f1f-10d4-4047-bce9-8d239fffc552)
 
 
 ## Base de datos
