@@ -132,7 +132,24 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
 <ul>
 <li>a. Reporte de asistencia a una sesión de clase
  <ul>
-    <li>👉 Lorem</li>
+    <li>👉 Un reporte donde se quiera ver la asistencia a la clase de math podria verse asi teniendo encuenta el model_db.sql adjunto:   
+      <code>
+      SELECT
+          u.name AS student_name,
+          u.email AS student_email,
+          at.name AS attendance_type,
+          abc.dateTimeMs AS attendance_time
+      FROM
+          attendance_by_course abc
+          JOIN users u ON abc.id_student = u.id
+          JOIN courses c ON abc.id_course = c.id
+          JOIN attendance_types at ON abc.id_attendance_type = at.id
+      WHERE
+          c.qr = 'codigo-qr-math'
+      ORDER BY
+          abc.dateTimeMs;
+      </code>    
+   </li>
   </ul>
 </li>
 <li>b. Reporte de estudiantes con mayor número de tardanzas
