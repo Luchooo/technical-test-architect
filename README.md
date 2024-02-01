@@ -60,7 +60,7 @@ Attendance marking by *** students through a QR code
     - Un estudiante podrá ver la grabación de la clase y se marcará su asistencia como grabación vista.
 
  **Información adicional**
-   - Información de materias
+   - Información de cursos
       - ID unico de cada materia
       - Nombre de la materia
   - Información del docente (***Stakeholder***)
@@ -75,8 +75,9 @@ Attendance marking by *** students through a QR code
      - Apellido
      - Correo
      - Teléfono
-  - Lista de materias_por_estudiante
-  - Lista de materias_por_docente   
+  - Lista de cursos_por_estudiantes
+  - Lista de cursos_por_docente   
+  - ¿Un docente puede dictar más de un curso? Asumire que si
 </details>   
 <br>
 
@@ -107,7 +108,7 @@ Attendance marking by *** students through a QR code
 <br>
 <p>👉 La definición del motor para implementar la base de datos siempre implica revisar las necesidades del negocio y analizar si el esquema de datos cambiaría continuamente con el tiempo.
 
-Dada la naturaleza de los datos, veo que no tienen mucha volatilidad, como la creación de usuarios con roles de estudiante o profesor, los cuales no cambiarán sus propiedades con frecuencia, o las materias que son muy consistentes en el tiempo.
+Dada la naturaleza de los datos, veo que no tienen mucha volatilidad, como la creación de usuarios con roles de estudiante o profesor, los cuales no cambiarán sus propiedades con frecuencia, o las propiedades de los cursos son muy consistentes en el tiempo.
 
 Elegiría un motor de base de datos SQL. Mi segundo criterio para la elección del motor, sería definir el entorno del producto. Si mi producto estará en un ecosistema de Microsoft, elegiría Microsoft SQL Server. Si mi aplicación tendrá pocos usuarios y baja concurrencia, optaría por SQLite. Esto nos deja con dos motores principales, MySQL y PostgreSQL. Aunque ambos garantizan la protección de la integridad de la información, elegiría PostgreSQL, ya que es el gestor con el que he trabajado y ha funcionado excelente para casos de uso como aplicaciones web, que es el escenario actual. La elección de PostgreSQL también está ligada a la comunidad y al soporte que ofrece. Otra razón importante para elegir esta base de datos es la gama de servicios que actualmente ofrece el ecosistema, no solo te ofrecen la DB, sino también APIs en tiempo real, autenticación, almacenamiento de archivos y Function Serverless. Ejemplos de estos servicios son Supabase, Vercel Postgres o AWS RDS.
 
