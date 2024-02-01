@@ -116,8 +116,8 @@ INSERT INTO attendance_by_course (id_student, id_course, dateTimeMs, id_attendan
 VALUES
     ((SELECT id FROM users WHERE email = 'luis@mail.com'), (SELECT id FROM courses WHERE qr = 'codigo-qr-math'), now(), (SELECT id FROM attendance_types WHERE name = 'puntual')),
     ((SELECT id FROM users WHERE email = 'maria@mail.com'), (SELECT id FROM courses WHERE qr = 'codigo-qr-math'), now(), (SELECT id FROM attendance_types WHERE name = 'tardanza')),
-    ((SELECT id FROM users WHERE email = 'luis@mail.com'), (SELECT id FROM courses WHERE qr = 'codigo-qr-biology'), now(), (SELECT id FROM attendance_types WHERE name = 'puntual')),
-    ((SELECT id FROM users WHERE email = 'maria@mail.com'), (SELECT id FROM courses WHERE qr = 'codigo-qr-biology'), now(), (SELECT id FROM attendance_types WHERE name = 'tardanza'));
+    ((SELECT id FROM users WHERE email = 'luis@mail.com'), (SELECT id FROM courses WHERE qr = 'codigo-qr-biology'), now(), (SELECT id FROM attendance_types WHERE name = 'no asistencia')),
+    ((SELECT id FROM users WHERE email = 'maria@mail.com'), (SELECT id FROM courses WHERE qr = 'codigo-qr-biology'), now(), (SELECT id FROM attendance_types WHERE name = 'no asistencia'));
 
 CREATE TABLE course_by_dates (
     id SERIAL PRIMARY KEY,
