@@ -122,7 +122,7 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
 <details>
   <summary>5. Defina un modelo de datos que cumpla con los requerimientos antes mencionados.</summary>  
 <br>
-<p>👉 Lorem</p>
+ <p>👉 Puedes ver el modelo dando click <a href="[URL_DEL_ENLACE](https://github.com/Luchooo/technical-test-architect/blob/main/model_db.sql)">aquí</a>.</p>
 </details> 
 
 <br>
