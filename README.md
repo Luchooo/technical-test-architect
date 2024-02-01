@@ -105,7 +105,16 @@ Attendance marking by *** students through a QR code
 <details>
   <summary>4. ¿En qué motor de base de datos implementaría su modelo? ¿Por qué?. Defina sus criterios y opciones</summary>  
 <br>
-<p>👉 Lorem</p>
+<p>👉 La definición del motor para implementar la base de datos siempre implica revisar las necesidades del negocio y analizar si el esquema de datos cambiaría continuamente con el tiempo.
+
+Dada la naturaleza de los datos, veo que no tienen mucha volatilidad, como la creación de usuarios con roles de estudiante o profesor, los cuales no cambiarán sus propiedades con frecuencia, o las materias que son muy consistentes en el tiempo.
+
+Elegiría un motor de base de datos SQL. Mi segundo criterio para la elección del motor, sería definir el entorno del producto. Si mi producto estará en un ecosistema de Microsoft, elegiría Microsoft SQL Server. Si mi aplicación tendrá pocos usuarios y baja concurrencia, optaría por SQLite. Esto nos deja con dos motores principales, MySQL y PostgreSQL. Aunque ambos garantizan la protección de la integridad de la información, elegiría PostgreSQL, ya que es el gestor con el que he trabajado y ha funcionado excelente para casos de uso como aplicaciones web, que es el escenario actual. La elección de PostgreSQL también está ligada a la comunidad y al soporte que ofrece. Otra razón importante para elegir esta base de datos es la gama de servicios que actualmente ofrece el ecosistema, no solo te ofrecen la DB, sino también APIs en tiempo real, autenticación, almacenamiento de archivos y Function Serverless. Ejemplos de estos servicios son Supabase, Vercel Postgres o AWS RDS.
+
+La elección del motor es sumamente importante, también podemos realizar pruebas de rendimiento con datos simulados para evaluar cómo se comporta cada uno de los motores mencionados anteriormente.
+
+El criterio del costo de la base de datos también lo tuve en cuenta. La gran mayoría de los servicios mencionados anteriormente tienen un free tier bastante cómodo en cuanto a lectura y capacidad de la base de datos, y si se llegase a superar, la escalabilidad sería automática.
+</p>
 </details> 
 <br>
 <details>
