@@ -122,7 +122,7 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
 <details>
   <summary>5. Defina un modelo de datos que cumpla con los requerimientos antes mencionados.</summary>  
 <br>
- <p>👉 Puedes ver el modelo dando click <a href="[URL_DEL_ENLACE](https://github.com/Luchooo/technical-test-architect/blob/main/model_db.sql)">aquí</a>.</p>
+ <p>👉 Puedes ver el modelo dando click <a href="https://github.com/Luchooo/technical-test-architect/blob/main/model_db.sql">aquí</a>.</p>
 </details> 
 
 <br>
@@ -132,7 +132,7 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
 <ul>
 <li>a. Reporte de asistencia a una sesión de clase
  <ul>
-    <li>👉 Un reporte donde se quiera ver la asistencia a la clase de math podria verse asi teniendo encuenta el model_db.sql adjunto:   
+    <li>👉 Un reporte donde se quiera ver la asistencia a la clase de math con código qr='codigo-qr-math' podria verse asi teniendo encuenta el model_db.sql adjunto:   
       <code>
       SELECT
           u.name AS student_name,
@@ -154,12 +154,73 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
 </li>
 <li>b. Reporte de estudiantes con mayor número de tardanzas
  <ul>
-    <li>👉 Lorem</li>
+    <li>👉 Un reporte donde se quiera ver la tardanza por cada estudiante podria verse asi teniendo encuenta el model_db.sql adjunto:   
+      <code>
+      SELECT
+          u.id AS student_id,
+          u.name AS student_name,
+          u.email AS student_email,
+          COUNT(*) AS tardiness_count
+      FROM
+          users u
+          JOIN attendance_by_course abc ON u.id = abc.id_student
+          JOIN attendance_types at ON abc.id_attendance_type = at.id
+      WHERE
+          u.role_id = (SELECT id FROM roles WHERE name = 'student')
+          AND at.name = 'tardanza'
+      GROUP BY
+          u.id, u.name, u.email
+      ORDER BY
+          tardiness_count DESC;
+      </code>    
+   </li>
   </ul>
 </li>
 <li>c. Reporte de docentes con mayor inasistencias
  <ul>
-    <li>👉 Lorem</li>
+    <li>👉 Un reporte de mayor inasistencias para el profesor daniel (email=daniel@mail.com) se veria asi:   
+      <code>
+      SELECT
+          c.id AS course_id,
+          c.name AS course_name,
+          u.id AS student_id,
+          u.name AS student_name,
+          u.email AS student_email,
+          COUNT(*) AS inasistencias_count
+      FROM
+          courses c
+          JOIN attendance_by_course abc ON c.id = abc.id_course
+          JOIN users u ON abc.id_student = u.id
+          JOIN attendance_types at ON abc.id_attendance_type = at.id
+          JOIN users teacher ON c.teacher_id = teacher.id
+      WHERE
+          teacher.email = 'daniel@mail.com'
+          AND at.name = 'no asistencia'
+      GROUP BY
+          c.id, c.name, u.id, u.name, u.email
+      HAVING
+          COUNT(*) = (
+              SELECT
+                  COUNT(*)
+              FROM
+                  courses c2
+                  JOIN attendance_by_course abc2 ON c2.id = abc2.id_course
+                  JOIN users u2 ON abc2.id_student = u2.id
+                  JOIN attendance_types at2 ON abc2.id_attendance_type = at2.id
+                  JOIN users teacher2 ON c2.teacher_id = teacher2.id
+              WHERE
+                  teacher2.email = 'daniel@mail.com'
+                  AND c2.id = c.id
+                  AND at2.name = 'no asistencia'
+              GROUP BY
+                  u2.id
+              ORDER BY
+                  COUNT(*) DESC
+              LIMIT 1
+          );
+
+      </code>    
+   </li>
   </ul>
 </li>
 </ul>
