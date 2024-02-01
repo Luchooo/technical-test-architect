@@ -78,6 +78,7 @@ Attendance marking by *** students through a QR code
   - Lista de cursos_por_estudiantes
   - Lista de cursos_por_docente   
   - ¿Un docente puede dictar más de un curso? Asumire que si
+  - ¿Un curso puede ser virtual y presencial al mismo tiempo? Asumire que si
 </details>   
 <br>
 
@@ -148,8 +149,6 @@ El criterio del costo de la base de datos también lo tuve en cuenta. La gran ma
 </details> 
 <br>
   
-
-
 ## Diseño
 
 <details>
