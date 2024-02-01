@@ -40,9 +40,11 @@ Attendance marking by *** students through a QR code
 
 ## Análisis / Algoritmia
 
-1. ¿Qué información necesitaría adicional para la marcación de asistencia?
-
-  Antes de mencionar la información adicional que llegasemos a requerir para la construcción del producto, quisiera definir la información conocida
+<details>
+  <summary>1. ¿Qué información necesitaría adicional para la marcación de asistencia?</summary>
+  <br>
+  <p>👉 Antes de mencionar la información adicional que llegasemos a requerir para la construcción del producto, quisiera definir la información conocida
+  </p>
 
  **Información obtenida**
   - Tipo de clases
@@ -58,52 +60,92 @@ Attendance marking by *** students through a QR code
     - Un estudiante podrá ver la grabación de la clase y se marcará su asistencia como grabación vista.
 
  **Información adicional**
-   - Información de las clases
-      - ID unico de cada clase
-      - Tipo de la clase (Presencial | Virtual)
-      - URL del video de la clase ***Si aplica***
-  - Información del docente (Stakeholder)
+   - Información de materias
+      - ID unico de cada materia
+      - Nombre de la materia
+  - Información del docente (***Stakeholder***)
      - ID unico de cada docente
      - Nombre
      - Apellido
      - Correo
      - Teléfono
-
-
-  - Información del estudiante (Stakeholder)
+  - Información del estudiante (***Stakeholder***)
      - ID unico de cada estudiante
      - Nombre
      - Apellido
      - Correo
      - Teléfono
+  - Lista de materias_por_estudiante
+  - Lista de materias_por_docente   
+</details>   
+<br>
 
-2. Determine cuales son los actores que intervienen en el proceso 🧍
- - Los actores que identifico que se encuentran en el proceso son los estudiantes, profesores, SIS (Sistema de información estudiantil), la plataforma educativa y los código QR de la clase. Los represente en el siguiente diagrama de uso:
+<details>
+  <summary>2. Determine cuales son los actores que intervienen en el proceso 🧍</summary>   
+ <br>
+ <p>👉 Los actores que identifico que se encuentran en el proceso son los estudiantes, profesores, SIS (Sistema de información estudiantil), la plataforma educativa y los código QR de la clase. Los represente en el siguiente diagrama de uso:
+ </p>
    
 ![Actores involucrados](https://github.com/Luchooo/technical-test-architect/assets/6707442/880636dd-174f-4fad-9186-728879c7c778)
 
+</details>   
+<br>
+<details>
+  <summary>3.  Defina un algoritmo que implemente la marcación de asistencia antes mencionada (Diagrama de flujo 🖼️)</summary>   
+ 
+ <br>
+ <p>👉 Diagrama de flujo del algoritmo</p>
 
-3.  Defina un algoritmo que implemente la marcación de asistencia antes mencionada (Diagrama de flujo 🖼️)  
+![Diagrama de flujo del algoritmo](https://github.com/Luchooo/technical-test-architect/assets/6707442/be741f1f-10d4-4047-bce9-8d239fffc552)
 
-![Ejemplo de diagrama de flujo de algoritmo](https://github.com/Luchooo/technical-test-architect/assets/6707442/be741f1f-10d4-4047-bce9-8d239fffc552)
-
+</details> 
 
 ## Base de datos
 
-4. ¿En qué motor de base de datos implementaría su modelo? ¿Por qué?. Defina sus criterios y opciones
-- Lorem
+<details>
+  <summary>4. ¿En qué motor de base de datos implementaría su modelo? ¿Por qué?. Defina sus criterios y opciones</summary>  
+<br>
+<p>👉 Lorem</p>
+</details> 
+<br>
+<details>
+  <summary>5. Defina un modelo de datos que cumpla con los requerimientos antes mencionados.</summary>  
+<br>
+<p>👉 Lorem</p>
+</details> 
 
-5. Defina un modelo de datos que cumpla con los requerimientos antes mencionados.  
-👉 Lorem
+<br>
+<details>
+  <summary>6. Realice las siguientes consultas, teniendo en cuenta el modelo previo.</summary>  
+<br>
+<ul>
+<li>a. Reporte de asistencia a una sesión de clase
+ <ul>
+    <li>👉 Lorem</li>
+  </ul>
+</li>
+<li>b. Reporte de estudiantes con mayor número de tardanzas
+ <ul>
+    <li>👉 Lorem</li>
+  </ul>
+</li>
+<li>c. Reporte de docentes con mayor inasistencias
+ <ul>
+    <li>👉 Lorem</li>
+  </ul>
+</li>
+</ul>
+</details> 
+<br>
+  
 
-6. Realice las siguientes consultas, teniendo en cuenta el modelo previo.
-a. Reporte de asistencia a una sesión de clase  
-👉 Lorem  
-b. Reporte de estudiantes con mayor número de tardanzas  
-👉 Lorem  
-c. Reporte de docentes con mayor inasistencias  
-👉 Lorem  
 
 ## Diseño
-7. Si tuviera que definir la interfaz de un estudiante donde pueda visualizar sus clases y asistencias que elementos incluiría.  
-👉 Lorem
+
+<details>
+  <summary>7. Si tuviera que definir la interfaz de un estudiante donde pueda visualizar sus clases y asistencias que elementos incluiría.</summary>
+  <br>
+  <p>👉 Lorem
+  </p>
+</details> 
+
