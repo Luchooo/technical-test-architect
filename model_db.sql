@@ -1,3 +1,5 @@
+-- TODO: Put script to create database
+
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 DROP TABLE IF EXISTS course_by_dates;
 DROP TABLE IF EXISTS attendance_by_course;
